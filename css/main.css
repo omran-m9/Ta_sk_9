@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.mortgage-calculator {
+    width: 100%;
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-form,
+.calculator-results {
+    padding: 20px;
+}
+
+.calculator-form {
+    background-color: #f8faff;
+    border-bottom: 1px solid #ccc;
+}
+
+.calculator-form h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.clear-btn {
+    float: right;
+    font-size: 0.9rem;
+    color: #0076d6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: #f0f8ff;
+}
+
+
+
+.input-group span {
+    font-weight: bold;
+    color: #555;
+    margin-right: 5px;
+}
+
+.input-group input {
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    background: transparent;
+}
+input[type="number"]::-webkit-inner-spin-button
+
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row > div {
+    flex: 1;
+}
+
+.radio-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-box input {
+    display: none;
+}
+
+.radio-box:hover {
+    border-color: #0076d6;
+}
+
+.radio-box span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.radio-box input:checked + span {
+    background-color: #fefae0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.calculate-btn {
+    background-color: #d1f000;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.calculate-btn:hover {
+    background-color: #b8dc00;
+}
+
+.calculate-btn .icon {
+    font-size: 1.2rem;
+}
+
+.calculator-results {
+    background-color: #001f2d;
+    color: #fff;
+}
+
+.calculator-results h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.calculator-results p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.results-summary {
+    border-top: 2px solid #0076d6;
+    padding-top: 10px;
+}
+
+.results-summary p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.results-summary h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d1f000;
+}
+
+.results-summary h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
